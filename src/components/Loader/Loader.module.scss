@@ -1,0 +1,23 @@
+@use "@/styles/variables" as *;
+
+.loader {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid $black-40;
+  border-top-color: $orange-100;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,129 @@
+@use "@/styles/variables" as *;
+
+.heroScreen {
+  background: linear-gradient(to bottom right, $white-100 50%, $orange-5 50%);
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  padding: 0 16px;
+
+  &Inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    @media (min-width: $bp-md) {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      max-width: 1280px;
+      margin: auto;
+      gap: 24px;
+    }
+  }
+}
+
+.imageBlock {
+  width: 100%;
+  max-width: 288px;
+  margin-bottom: 24px;
+
+  > img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: $bp-md) {
+    flex: 1;
+    max-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    align-self: stretch;
+    width: 100%;
+    max-width: 624px;
+
+    > img {
+      max-width: 624px;
+    }
+  }
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 288px;
+
+  @media (min-width: $bp-md) {
+    max-width: 624px;
+  }
+
+  > h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 116%;
+    color: $black-100;
+    text-align: center;
+    margin: 0;
+
+    @media (min-width: $bp-md) {
+      text-align: left;
+      width: 100%;
+      max-width: 624px;
+    }
+  }
+
+  .subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 116%;
+    color: $black-40;
+    margin: 0;
+
+    @media (min-width: $bp-md) {
+      font-size: 32px;
+    }
+  }
+
+  @media (min-width: $bp-md) {
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center;
+
+    > h1 {
+      font-size: 56px;
+      text-align: left;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.buttonWrapper {
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: calc(100% - 16px);
+  height: 48px;
+  margin: auto;
+  box-sizing: border-box;
+
+  @media (min-width: $bp-md) {
+    width: 100%;
+    max-width: 296px;
+    height: 64px;
+    position: static;
+    align-items: flex-start;
+    margin: unset;
+  }
+}

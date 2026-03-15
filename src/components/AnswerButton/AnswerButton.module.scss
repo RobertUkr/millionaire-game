@@ -1,0 +1,162 @@
+@use "@/styles/variables" as *;
+.answer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  padding: 14px 36px;
+  height: var(--btn-height, 56px);
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  background: transparent;
+  overflow: visible;
+  --border-color: #{$black-40};
+  --bg-color: #{$white-100};
+}
+
+.answer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--border-color);
+  clip-path: polygon(
+    20px 0%,
+    calc(100% - 20px) 0%,
+    100% 50%,
+    calc(100% - 20px) 100%,
+    20px 100%,
+    0% 50%
+  );
+  z-index: 0;
+}
+
+.answer::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-color);
+  clip-path: polygon(
+    19px 0%,
+    calc(100% - 19px) 0%,
+    100% 50%,
+    calc(100% - 19px) 100%,
+    19px 100%,
+    0% 50%
+  );
+  z-index: 1;
+}
+
+.answer > * {
+  position: relative;
+  z-index: 2;
+}
+
+.answer:disabled {
+  cursor: default;
+}
+
+@media (hover: hover) {
+  .answer:not(:disabled):hover {
+    --border-color: #{$orange-100};
+  }
+}
+
+.letter {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 116%;
+  color: #{$orange-100};
+  min-width: 20px;
+
+  @media (min-width: $bp-md) {
+    font-size: 20px;
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 116%;
+  color: #{$black-100};
+
+  @media (min-width: $bp-md) {
+    font-size: 20px;
+  }
+}
+
+/* State questions buttons */
+.selected {
+  --border-color: #{$orange-100};
+  --bg-color: #{$orange-5};
+  --text-color: #{$orange-100};
+
+  .text {
+    color: #{$orange-100};
+  }
+}
+
+.correct {
+  --border-color: #{$green-100};
+  --bg-color: #{$green-5};
+}
+
+.wrong {
+  --border-color: #{$red-100};
+  --bg-color: #{$red-5};
+}
+
+.disabled {
+  .text {
+    color: #{$black-40};
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  --border-color: #{$black-40};
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--tail-width, 17px));
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  width: var(--tail-width, 17px);
+  height: 1px;
+  background: var(--border-color);
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  right: calc(-1 * var(--tail-width, 17px));
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  width: var(--tail-width, 17px);
+  height: 1px;
+  background: var(--border-color);
+}
+
+@media (hover: hover) {
+  .wrapper:has(.answer:not(:disabled):hover) {
+    --border-color: #{$orange-100};
+  }
+}
+.wrapper:has(.selected) {
+  --border-color: #{$orange-100};
+}
+.wrapper:has(.correct) {
+  --border-color: #{$green-100};
+}
+.wrapper:has(.wrong) {
+  --border-color: #{$red-100};
+}

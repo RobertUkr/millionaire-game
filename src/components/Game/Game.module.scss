@@ -1,0 +1,135 @@
+@use "@/styles/variables" as *;
+
+.game {
+  min-height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  @media (min-width: $bp-md) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+  }
+}
+
+.questionSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 17px 24px;
+
+  @media (min-width: $bp-md) {
+    flex: 1;
+    min-height: unset;
+    padding: 133px 17px 40px;
+    justify-content: center;
+    width: 100%;
+    max-width: 842px;
+    margin: 0 auto;
+  }
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: $black-100;
+    border-radius: 2px;
+  }
+
+  @media (min-width: $bp-md) {
+    display: none;
+  }
+}
+
+.question {
+  padding-top: 136px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  color: $black-100;
+  text-align: center;
+
+  @media (min-width: $bp-md) {
+    padding-top: 0;
+    font-size: 28px;
+    text-align: left;
+    max-width: 624px;
+  }
+}
+
+.answersWrap {
+  margin-top: auto;
+}
+
+/* Prize drawer */
+.prizeDrawer {
+  display: none;
+
+  @media (min-width: $bp-md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
+    flex-shrink: 0;
+    background: $white-100;
+  }
+
+  @media (min-width: $bp-lg) {
+    width: 376px;
+  }
+}
+
+.prizeOpen {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: $white-100;
+  z-index: 100;
+  overflow-y: auto;
+  padding: 16px 0;
+
+  @media (min-width: $bp-md) {
+    position: static;
+    width: 220px;
+  }
+
+  @media (min-width: $bp-lg) {
+    width: 376px;
+  }
+}
+
+.closeBtn {
+  display: flex;
+  margin-left: auto;
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 16px;
+  margin-bottom: 24px;
+
+  @media (min-width: $bp-md) {
+    display: none;
+  }
+}
+
+.gameOver {
+  background: $white-100;
+}

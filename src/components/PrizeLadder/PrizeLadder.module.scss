@@ -1,0 +1,43 @@
+@use "@/styles/variables" as *;
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+
+  @media (min-width: $bp-md) {
+    justify-content: center;
+    flex: unset;
+    height: 100%;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding: 0 40px;
+  margin: 0;
+  --btn-height: 32px;
+  --tail-width: 40px;
+  --text-size: 14px;
+  --text-weight: 400;
+  --text-line-height: 116%;
+
+  @media (min-width: $bp-md) {
+    padding: 0 30px;
+    width: auto;
+    --tail-width: 30px;
+    --btn-height: 40px;
+    --text-size: 20px;
+    --text-weight: 400;
+    --text-line-height: 116%;
+  }
+
+  @media (min-width: $bp-lg) {
+    padding: 0 70px;
+    --tail-width: 70px;
+  }
+}

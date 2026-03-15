@@ -1,0 +1,158 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is the capital of Ukraine?",
+      "prize": 100,
+      "answers": [
+        { "id": "a1", "text": "Lviv", "isCorrect": false },
+        { "id": "a2", "text": "Kyiv", "isCorrect": true },
+        { "id": "a3", "text": "Kharkiv", "isCorrect": false },
+        { "id": "a4", "text": "Odesa", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "Which of these languages are official in Switzerland?",
+      "prize": 200,
+      "answers": [
+        { "id": "a1", "text": "German", "isCorrect": true },
+        { "id": "a2", "text": "French", "isCorrect": true },
+        { "id": "a3", "text": "Spanish", "isCorrect": false },
+        { "id": "a4", "text": "Italian", "isCorrect": true }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "How many planets are in the Solar System?",
+      "prize": 500,
+      "answers": [
+        { "id": "a1", "text": "7", "isCorrect": false },
+        { "id": "a2", "text": "8", "isCorrect": true },
+        { "id": "a3", "text": "9", "isCorrect": false },
+        { "id": "a4", "text": "10", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "Who wrote the poetry collection \"Kobzar\"?",
+      "prize": "1,000",
+      "answers": [
+        { "id": "a1", "text": "Ivan Franko", "isCorrect": false },
+        { "id": "a2", "text": "Lesia Ukrainka", "isCorrect": false },
+        { "id": "a3", "text": "Taras Shevchenko", "isCorrect": true },
+        { "id": "a4", "text": "Mykhailo Kotsiubynsky", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q5",
+      "text": "What is the chemical formula of water?",
+      "prize": "2,000",
+      "answers": [
+        { "id": "a1", "text": "CO₂", "isCorrect": false },
+        { "id": "a2", "text": "H₂O", "isCorrect": true },
+        { "id": "a3", "text": "O₂", "isCorrect": false },
+        { "id": "a4", "text": "NaCl", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q6",
+      "text": "In what year did humans first land on the Moon?",
+      "prize": "4,000",
+      "answers": [
+        { "id": "a1", "text": "1965", "isCorrect": false },
+        { "id": "a2", "text": "1972", "isCorrect": false },
+        { "id": "a3", "text": "1969", "isCorrect": true },
+        { "id": "a4", "text": "1971", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q7",
+      "text": "What is the longest river in the world?",
+      "prize": "8,000",
+      "answers": [
+        { "id": "a1", "text": "Amazon", "isCorrect": false },
+        { "id": "a2", "text": "Yangtze", "isCorrect": false },
+        { "id": "a3", "text": "Mississippi", "isCorrect": false },
+        { "id": "a4", "text": "Nile", "isCorrect": true }
+      ]
+    },
+    {
+      "id": "q8",
+      "text": "How many bones are in the adult human body?",
+      "prize": "16,000",
+      "answers": [
+        { "id": "a1", "text": "206", "isCorrect": true },
+        { "id": "a2", "text": "186", "isCorrect": false },
+        { "id": "a3", "text": "256", "isCorrect": false },
+        { "id": "a4", "text": "226", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q9",
+      "text": "Who painted \"The Starry Night\"?",
+      "prize": "32,000",
+      "answers": [
+        { "id": "a1", "text": "Pablo Picasso", "isCorrect": false },
+        { "id": "a2", "text": "Claude Monet", "isCorrect": false },
+        { "id": "a3", "text": "Leonardo da Vinci", "isCorrect": false },
+        { "id": "a4", "text": "Vincent van Gogh", "isCorrect": true }
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "What is the speed of light in a vacuum (approximately)?",
+      "prize": "64,000",
+      "answers": [
+        { "id": "a1", "text": "300,000 km/s", "isCorrect": true },
+        { "id": "a2", "text": "150,000 km/s", "isCorrect": false },
+        { "id": "a3", "text": "500,000 km/s", "isCorrect": false },
+        { "id": "a4", "text": "1,000,000 km/s", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "Which ocean is the largest in the world?",
+      "prize": "125,000",
+      "answers": [
+        { "id": "a1", "text": "Atlantic Ocean", "isCorrect": false },
+        { "id": "a2", "text": "Indian Ocean", "isCorrect": false },
+        { "id": "a3", "text": "Arctic Ocean", "isCorrect": false },
+        { "id": "a4", "text": "Pacific Ocean", "isCorrect": true }
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "Which element is represented by the symbol \"Au\" in the periodic table?",
+      "prize": "250,000",
+      "answers": [
+        { "id": "a1", "text": "Silver", "isCorrect": false },
+        { "id": "a2", "text": "Gold", "isCorrect": true },
+        { "id": "a3", "text": "Copper", "isCorrect": false },
+        { "id": "a4", "text": "Aluminum", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "How many sides does a regular hexagon have?",
+      "prize": "500,000",
+      "answers": [
+        { "id": "a1", "text": "5", "isCorrect": false },
+        { "id": "a2", "text": "6", "isCorrect": true },
+        { "id": "a3", "text": "7", "isCorrect": false },
+        { "id": "a4", "text": "8", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "In which city is the Colosseum located?",
+      "prize": "1,000,000",
+      "answers": [
+        { "id": "a1", "text": "Athens", "isCorrect": false },
+        { "id": "a2", "text": "Paris", "isCorrect": false },
+        { "id": "a3", "text": "Barcelona", "isCorrect": false },
+        { "id": "a4", "text": "Rome", "isCorrect": true }
+      ]
+    }
+  ]
+}
