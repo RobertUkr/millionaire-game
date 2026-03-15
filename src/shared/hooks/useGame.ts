@@ -19,7 +19,7 @@ const initialState: GameState = {
   currentIndex: 0,
   selectedAnswerId: null,
   answerResult: null,
-  earnedPrize: "",
+  earnedPrize: "0",
 };
 
 const loadState = (): GameState | null => {
