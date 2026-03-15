@@ -55,7 +55,9 @@ const Game = () => {
         title={`$${earnedPrize.toLocaleString()} earned`}
         buttonLabel="Try again"
         onAction={resetGame}
-        className={cn({ [styles.gameOver]: status === GAME_STATUS.LOST })}
+        className={cn({
+          [styles.finishScreen]: status === GAME_STATUS.LOST || GAME_STATUS.WON,
+        })}
       />
     );
   }
